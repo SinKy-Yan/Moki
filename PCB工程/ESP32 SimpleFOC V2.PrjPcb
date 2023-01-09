@@ -67,7 +67,7 @@ GenerateClassCluster=0
 DocumentUniqueId=CJHNTGTK
 
 [Document2]
-DocumentPath=PCB layout.PcbDoc
+DocumentPath=..\..\PCB layout.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -82,110 +82,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RJHOKYIJ
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs\PCB1-RoundHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs\PCB1-SlotHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs\PCB1.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs\PCB1.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs\PCB1.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs\PCB1.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs\PCB1.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs\PCB1.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs\PCB1.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs\PCB1.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs\PCB1.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs\PCB1.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs\PCB1.GM5
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs\PCB1.GM6
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs\PCB1.GM13
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs\PCB1.GM14
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs\PCB1.GM15
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs\PCB1.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs\PCB1.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs\PCB1.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs\PCB1.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs\PCB1.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs\PCB1.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs\PCB1.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=Project Outputs\PCB1.REP
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs\PCB1.RUL
-DItemRevisionGUID=
 
 [Parameter1]
 Name=CAGE_CODE
