@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\sjy1a\Desktop\Moki\Moki V3\Moki V3.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=moki v3-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=moki v3-slotholes.txt|DrillLayers=gtl,gbl

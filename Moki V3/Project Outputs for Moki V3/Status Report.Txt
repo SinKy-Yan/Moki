@@ -1,0 +1,14 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Moki V3.PrjPcb]
+   Generated File[Moki V3.GTP]
+   Generated File[Moki V3.GBP]
+   Generated File[Moki V3.RUL]
+   Generated File[Moki V3.EXTREP]
+   Generated File[Moki V3.REP]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 19:44:57 On 2023/1/27
