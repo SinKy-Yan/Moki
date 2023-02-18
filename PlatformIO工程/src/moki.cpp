@@ -16,9 +16,9 @@
 MagneticSensorI2C sensor1 = MagneticSensorI2C(AS5600_I2C);
 MagneticSensorI2C sensor2 = MagneticSensorI2C(AS5600_I2C);
 BLDCMotor motor1 = BLDCMotor(11, 12.5, 74);
-BLDCDriver3PWM driver1 = BLDCDriver3PWM(17, 18, 5, 19);
+BLDCDriver3PWM driver1 = BLDCDriver3PWM(13, 12, 27, 14);
 BLDCMotor motor2 = BLDCMotor(11, 12.5, 74);
-BLDCDriver3PWM driver2 = BLDCDriver3PWM(14, 26, 27, 25);
+BLDCDriver3PWM driver2 = BLDCDriver3PWM(15, 0, 4, 2);
 
 /* 串口控制 */
 Commander command = Commander(Serial);
@@ -36,13 +36,13 @@ void Moki::setup()
     /* ESP32通信接口设置 */
     setCpuFrequencyMhz(Cpu_Frequency);
     Serial.begin(115200);
-    Serial1.begin(115200, SERIAL_8N1, 21, 23);
+    Serial1.begin(115200, SERIAL_8N1, 21, 22);
 
     /* 板载LED设置 */
     // xTaskCreatePinnedToCore(Task1code, "Task1", 10000, NULL, 1, NULL, 1);
-    ledcSetup(1, 1000, 8);  // 设置LEDC通道8频率为1,分辨率为10位,即占空比可选0~1023
-    ledcAttachPin(2, 1); // 设置LEDC通道8在IO14上输出
-    ledcWrite(1, 1000);
+    // ledcSetup(1, 1000, 8);  // 设置LEDC通道8频率为1,分辨率为10位,即占空比可选0~1023
+    // ledcAttachPin(2, 1); // 设置LEDC通道8在IO14上输出
+    // ledcWrite(1, 1000);
 
     command.add('A', onMotor1, "设定电机1");
     command.add('B', onMotor2, "设定电机2");
@@ -90,7 +90,7 @@ void Moki::run_m1()
     //     motor1.voltage_limit = 2;
     //     motor1.move(2);
     // }
-    
+
     motor1.loopFOC();
     motor1.move();
     // Serial.println(sensor1.getAngle());
@@ -104,7 +104,7 @@ void Moki::run_m2()
 
 void Moki::init_m1()
 {
-    Wire.begin(4, 16, (uint32_t)i2c_Frequency);
+    Wire.begin(25, 26, (uint32_t)i2c_Frequency);
     sensor1.init();
     motor1.linkSensor(&sensor1);
     driver1.voltage_power_supply = power_supply_voltage;
@@ -137,7 +137,7 @@ void Moki::init_m1()
         Serial.println("未设置m1机械偏差,开始自检");
         motor1.initFOC();
     }
-        
+
     else
     {
         Serial.println("已设置m1机械偏差,跳过自检");
@@ -150,7 +150,7 @@ void Moki::init_m1()
 
 void Moki::init_m2()
 {
-    Wire1.begin(32, 33, (uint32_t)i2c_Frequency);
+    Wire1.begin(33, 32, (uint32_t)i2c_Frequency);
     sensor2.init(&Wire1);
     motor2.linkSensor(&sensor2);
     driver2.voltage_power_supply = power_supply_voltage;
