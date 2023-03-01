@@ -1,4 +1,4 @@
-<img src="\老版本文件\渲染\屏幕截图 2023-01-29 010049.png" alt="DSC00181" style="zoom:30%;" />
+<img src="\老版本文件\渲染\屏幕截图 2023-01-29 010049.png" style="zoom:30%;" />
 
 # Moki V3🦄
 
@@ -8,7 +8,7 @@
 
 基于`SimpleFOC`设计
 
-<img src="C:\Users\源源\Desktop\Moki\图片\DSC00406.JPG" alt="DSC00406" style="zoom:10%;" />
+<img src="图片\DSC00406.JPG" style="zoom:10%;" />
 
 # ⚠️注意
 
